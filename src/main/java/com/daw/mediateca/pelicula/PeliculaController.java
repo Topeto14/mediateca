@@ -19,4 +19,12 @@ public class PeliculaController {
     public List<Pelicula> listar() {
         return peliculas;                 // Spring convierte automáticamente la lista de películas a JSON
     }
+
+    @GetMapping("/{id}")
+    public Pelicula buscarPorId(@PathVariable Long id) {
+        return peliculas.stream()
+                .filter(p -> p.id().equals(id))
+                .findFirst()
+                .orElse(null);                      // Si no existe, respuesta vacía (lo mejoraremos en la UD3)
+    }
 }
