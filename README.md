@@ -7,4 +7,5 @@ Práctica de la UD2: trabajo en pareja con Git y GitHub.
 - Persona B: (Robert Sobremesa)
 
 ## Endpoints disponibles
-- (pendiente)
+- `Get /series` . listado de series
+- `Get /series/{id}` . serie por identificador
