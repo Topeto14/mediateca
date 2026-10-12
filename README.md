@@ -12,3 +12,4 @@ Práctica de la UD2: trabajo en pareja con Git y GitHub.
 - `Get /series` . listado de series
 - `Get /series/{id}` . serie por identificador
 - `Get /series/plataforma/{plataforma}` . listado de series por plataforma
+- `Get /peliculas/director/{director}` .películas por director
